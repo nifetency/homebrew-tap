@@ -1,5 +1,5 @@
-name: "Update Fly"
-description: "Update fly cli"
+name: "Update Nife"
+description: "Update Nife Commandline"
 runs:
   using: "docker"
   image: "Dockerfile"
