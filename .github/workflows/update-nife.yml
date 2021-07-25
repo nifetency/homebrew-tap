@@ -1,4 +1,4 @@
-name: Update fly
+name: Update Nife
 on: [repository_dispatch, workflow_dispatch]
 
 jobs:
@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ./.github/actions/update-fly
+      - uses: ./.github/actions/update-nife
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
