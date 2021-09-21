@@ -1,17 +1,17 @@
 class Nifejs < Formula
   desc "Nifejs cli"
   homepage "https://nife.io"
-  url "https://get.fly.io/tarballs/stable/flyjs-v0.56.2/flyjs-v0.56.2-darwin-x64.tar.gz"
-  sha256 "4deb8d482fdf0b867d6e436c387c31fedb3d70fc56f9c43344a78a44c429a02c"
+  url "https://github.com/nifetency/nife-release/releases/download/2.6.0/nifectl-V2.6.0-darwin-amd64.tar.gz"
+  sha256 "858b065a3db664f276586a6c8e9e22fd"
   version "2.6.0"
 
   def install
-    inreplace "bin/nifejs", /^CLIENT_HOME=/, "export FLY_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
+    inreplace "bin/nifejs", /^CLIENT_HOME=/, "export NIFE_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/flyjs"
+    bin.install_symlink libexec/"bin/nifectl"
   end
 
   test do
-    system bin/"flyjs", "version"
+    system bin/"nifectl", "version"
   end
 end
