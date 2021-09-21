@@ -10,11 +10,11 @@ class Nifectl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nifectl/nifectl-V2.6.0-darwin-amd64.tar.gz""
+      url "https://github.com/nifetency/nife-release/releases/download/2.6.0/nifectl-V2.6.0-darwin-amd64.tar.gz""
       sha256 "af08779b2296257494399d487e9567cbda35f77a5946b933619b4494cd6f0382"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/superfly/flyctl/releases/download/v0.0.229/flyctl_0.0.229_macOS_arm64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/2.6.0/nifectl-V2.6.0-macOS-arm64.tar.gz"
       sha256 "e9b414f4f2f3e64fa722c1d94158d57c3e5ce7e1c9b83121a38b32ceae2fc5a3"
     end
   end
