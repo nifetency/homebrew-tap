@@ -3,6 +3,7 @@ class Nifectl < Formula
   desc "Deploys, manages and scales applications"
   homepage "https://www.nife.io"
   version "0.1.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
@@ -28,14 +29,9 @@ class Nifectl < Formula
   def install
     bin.install "nifectl"
     bin.install_symlink "nifectl" => "nife"
-
-    bash_output = Utils.safe_popen_read("#{bin}/nifectl", "completion", "bash")
-    (bash_completion/"nifectl").write bash_output
-    zsh_output = Utils.safe_popen_read("#{bin}/nifectl", "completion", "zsh")
-    (zsh_completion/"_ nifectl").write zsh_output
   end
 
   test do
-    system "#{sbin}/nifectl"
+    system "#{sbin}/nifectl version"
   end
 end
