@@ -5,26 +5,26 @@
 class Nifectl < Formula
   desc ""
   homepage "https://nife.io"
-  version "4.1.1"
+  version "0.1.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/4.1.1/nifectl-4.1.1-darwin-amd64.tar.gz""
+      url "https://github.com/nifetency/nife-release/releases/download/v0.1.0/nifectl-prod-v0.1.0-darwin-amd64.tar.gz"
       sha256 "af08779b2296257494399d487e9567cbda35f77a5946b933619b4494cd6f0382"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nifetency/nife-release/releases/download/4.1.1/nifectl-4.1.1-macOS-arm64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v0.1.0/nifectl-prod-v0.1.0-darwin-amd64.tar.gz"
       sha256 "e9b414f4f2f3e64fa722c1d94158d57c3e5ce7e1c9b83121a38b32ceae2fc5a3"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nifectl/releases/download/4.1.1/nifectl-4.1.1-linux-amd64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v0.1.0/nifectl-prod-v0.1.0-linux-386.tar.gz"
       sha256 "1eea1a1b47e15a41828f9f68a51479ed50d6a073bc3bdd7a4c1ea3c846dba0fa"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nifectl/releases/download/4.1.1/nifectl-4.1.1-linux-amd64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v0.1.0/nifectl-prod-v0.1.0-linux-amd64.tar.gz"
       sha256 "15fd1a1abb04cbb5b0d58d0d9a732507884309b1d15ea6d2b4be6fa8d208e373"
     end
   end
