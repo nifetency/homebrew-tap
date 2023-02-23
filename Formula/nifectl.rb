@@ -7,22 +7,22 @@ class Nifectl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.8/nifectl-prod-v0.1.8-darwin-amd64.tar.gz"
-      sha256 "69425bc7491335610912235451de0f72770538251a0b0358824f2d428d2d722a"
+      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.9/nifectl-prod-v0.1.9-darwin-amd64.tar.gz"
+      sha256 "1ae78a95e4f8c498cc982d9467918d057e63b6498cbbe61f3020896c1c404132"
     end
     if Hardware::CPU.arm?
       url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.8/nifectl-prod-v0.1.8-darwin-amd64.tar.gz"
-      sha256 "69425bc7491335610912235451de0f72770538251a0b0358824f2d428d2d722a"
+      sha256 "1ae78a95e4f8c498cc982d9467918d057e63b6498cbbe61f3020896c1c404132"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.8/nifectl-prod-v0.1.8-linux-386.tar.gz"
-      sha256 "0bff280108eb63bc99b8fd2bb3dfb58a0a9561718b97220ef5fffd0c4f5520f1"
+      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.9/nifectl-prod-v0.1.9-linux-386.tar.gz"
+      sha256 "8f9a158be845ea599465ea1ea93b4fe2bfeb7cc46179c7d589956f4f84e1aed1"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.8/nifectl-prod-v0.1.8-linux-amd64.tar.gz"
-      sha256 "0cdc2db880c5592cf93bf667df8581a81d1b054363436d3a7bd7dd48ef35b3b9"
+      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.1.9/nifectl-prod-v0.1.9-linux-amd64.tar.gz"
+      sha256 "9667980ebbc32431e8bd31e8ff3bdfb7be1a6f9e7fab1f0308497300c375108e"
     end
   end
 
