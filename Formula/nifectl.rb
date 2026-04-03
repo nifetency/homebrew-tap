@@ -17,12 +17,12 @@ class Nifectl < Formula
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl-linux-386.tar.gz"
+      sha256 "418e890e7bbc7d89ade14cff4f4bda9c9b52d4b0c700fe231f6b7584812c2d64"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl-linux-amd64.tar.gz"
+      sha256 "sha256:e4243e2fa4b04a5329dbf46c516e0d8a9d45125b58437e08ef922946a6772069"
     end
   end
 
