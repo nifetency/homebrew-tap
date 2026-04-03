@@ -2,27 +2,27 @@
 class Nifectl < Formula
   desc "Deploys, manages and scales applications"
   homepage "https://www.nife.io"
-  version "0.1.0"
+  version "4.1.7-prod"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.3.7/nifectl-prod-v0.3.7-darwin-amd64.tar.gz"
-      sha256 "8C40DAB5E9B74594CEC7E57EDE5DD4A5C217119C5259B6228B453A48C30BBB6C"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.3.7/nifectl-prod-v0.3.7-darwin-amd64.tar.gz"
-      sha256 "8C40DAB5E9B74594CEC7E57EDE5DD4A5C217119C5259B6228B453A48C30BBB6C"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.3.7/nifectl-prod-v0.3.7-linux-386.tar.gz"
-      sha256 "32F6739359C33285FF85CB46D6FA685F6E442F0FAEDF0A10CE636F6EB341F57F"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nife-release/releases/download/prod-v0.3.7/nifectl-prod-v0.3.7-linux-amd64.tar.gz"
-      sha256 "AC54EED9B8391D41C0991649FDBA5BC9E3CF3B7C0030D50E369C6D4737FD4D98"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.7-prod/nifectl_4.1.7-prod_darwin_amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
