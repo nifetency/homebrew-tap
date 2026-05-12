@@ -2,27 +2,27 @@
 class Nifectl < Formula
   desc "Deploys, manages and scales applications"
   homepage "https://www.nife.io"
-  version "4.1.12-prod"
+  version "4.1.8-dev"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.12-prod/nifectl-darwin-amd64.tar.gz"
-      sha256 "2a056370273f4550cf086d6a25747879278c43e078c4589103ffbfc95d46bd81"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.8-dev/nifectl-darwin-amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.12-prod/nifectl-darwin-amd64.tar.gz"
-      sha256 "2a056370273f4550cf086d6a25747879278c43e078c4589103ffbfc95d46bd81"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.8-dev/nifectl-darwin-amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.12-prod/nifectl-linux-386.tar.gz"
-      sha256 "dbf122d08dbcfba29f4bbda5427622492ed7c29f1df15a8931f9ffddfe93bab1"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.8-dev/nifectl-linux-386.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.12-prod/nifectl-linux-amd64.tar.gz"
-      sha256 "d4a2d684c97bedcd6b4e35d6bf2e02c66ca46a6a03b8a70356b6215f6857039c"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.8-dev/nifectl-linux-amd64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
@@ -32,6 +32,6 @@ class Nifectl < Formula
   end
 
   test do
-    system "#{sbin}/nifectl version"
+    system "#{bin}/nifectl", "version"
   end
 end
