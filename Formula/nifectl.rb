@@ -2,30 +2,30 @@
 class Nifectl < Formula
   desc "Deploys, manages and scales applications"
   homepage "https://www.nife.io"
-  version "4.1.25-dev"
+  version "4.1.25-prod"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-dev/nifectl-darwin-amd64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-prod/nifectl-darwin-amd64.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-dev/nifectl-darwin-amd64.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-prod/nifectl-darwin-amd64.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-dev/nifectl-linux-386.tar.gz"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-prod/nifectl-linux-386.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-dev/nifectl-linux-amd64.tar.gz"
-      sha256 "0eb807a595daa8e5f14f9df239788cc8828bb9c55e091e4a53916e92495f0dfb"
+      url "https://github.com/nifetency/nife-release/releases/download/v4.1.25-prod/nifectl-linux-amd64.tar.gz"
+      sha256 "aac430d8184aef3860b3599627a6b97263c5d09437bf743d9cba317c768890eb"
     end
   end
 
